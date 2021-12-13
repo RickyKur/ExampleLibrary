@@ -14,7 +14,9 @@ project.afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                artifact androidSourcesJar
+                groupId = "self.mymessage"
+                artifactId = "MyMessage"
+                version = '1.0.0'
             }
         }
     }
