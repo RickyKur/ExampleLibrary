@@ -27,4 +27,8 @@ class ExampleMessage(
       Toast.makeText(weakContext?.get(), message, Toast.LENGTH_SHORT).show()
     }
   }
+
+  fun showProfanity() {
+    Toast.makeText(weakContext?.get(), "**** ***", Toast.LENGTH_SHORT).show()
+  }
 }
